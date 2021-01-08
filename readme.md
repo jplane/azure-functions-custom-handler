@@ -30,7 +30,7 @@ equally well on your laptop or in the cloud.
 
 	- delete any existing 'bin' and 'obj' folders
 	- copy all source from [WebApplication1](./WebApplication1) to 'FunctionHost/src'
-	- build a Docker image to host the Functions runtime and your custom ASP.NET endpoint (invoked by the Functions runtime) using [this](./FunctionsHost/Dockerfile) Dockerfile
+	- build a Docker image to host the Functions runtime and your custom ASP.NET endpoint (invoked by the Functions runtime) using [this](./FunctionHost/Dockerfile) Dockerfile
 	- start up a container using the image built in the last step
 
 - to interact with the Functions app, use Postman or a similar tool to issue an HTTP GET:
