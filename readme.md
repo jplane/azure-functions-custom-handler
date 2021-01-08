@@ -7,7 +7,7 @@ than functions-as-a-service.
 
 Custom handlers run as a standalone HTTP endpoint adjacent to the Functions runtime, and invoked by the Functions runtime in response to Functions input:
 
-![https://docs.microsoft.com/en-us/azure/azure-functions/media/functions-custom-handlers/azure-functions-custom-handlers-overview.png]
+![handlers-overview](https://docs.microsoft.com/en-us/azure/azure-functions/media/functions-custom-handlers/azure-functions-custom-handlers-overview.png)
 
 This sample implements the handler as a standard ASP.NET Core Web API app.
 
@@ -32,4 +32,8 @@ This sample implements the handler as a standard ASP.NET Core Web API app.
 	- build a Docker image to host the Functions runtime and your custom ASP.NET endpoint (invoked by the Functions runtime) using [this](./FunctionsHost/Dockerfile) Dockerfile
 	- start up a container using the image built in the last step
 
-- to interact with the Functions app, use Postman or a similar tool to issue an HTTP GET to 'http://localhost:5002/api/test/some-value'
+- to interact with the Functions app, use Postman or a similar tool to issue an HTTP GET:
+
+```
+http://localhost:5002/api/test/some-value
+```
