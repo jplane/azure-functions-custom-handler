@@ -1,0 +1,15 @@
+{
+  "version": "2.0",
+  "customHandler": {
+    "description": {
+      "defaultExecutablePath": "app/WebApplication1",
+      "arguments": [
+        "--urls",
+        "http://*:%FUNCTIONS_CUSTOMHANDLER_PORT%",
+        "--TEST_VAR",
+        "%TEST_VAR%"
+      ]
+    },
+    "enableForwardingHttpRequest": true
+  }
+}
