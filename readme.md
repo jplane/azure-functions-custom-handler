@@ -9,7 +9,8 @@ Custom handlers run as a standalone HTTP endpoint adjacent to the Functions runt
 
 ![handlers-overview](https://docs.microsoft.com/en-us/azure/azure-functions/media/functions-custom-handlers/azure-functions-custom-handlers-overview.png)
 
-This sample implements the handler as a standard ASP.NET Core Web API app.
+This sample implements the handler as a standard ASP.NET Core Web API app. The Functions runtime and Web API app are baked into a single Docker image which runs
+equally well on your laptop or in the cloud.
 
 ## Pre-requisites
 
